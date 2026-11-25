@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Please | Don't Delay, Eat Today!</title>
+    <meta name="description" content="Best Burgers, Pizzas, and Fast Food in Narowal. Free Home Delivery!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>SPREAD <span>PLEASE</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:03464530052" class="call-btn"><i class="fa-solid fa-phone"></i> 0346-4530052</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <span style="background: var(--primary-red); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-bottom: 15px; display: inline-block;">🔥 100% FRESH & DELICIOUS</span>
+                <h1>Don't Delay,<br><span>Eat Today!</span></h1>
+                <p>Craving something juicy, crispy, and cheesy? We've got the best burgers, pizzas, and loaded fries in Narowal. Delivery is absolutely FREE!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="https://wa.me/923464530052?text=Hello%20Sir,%20I%20have%20a%20order" class="btn btn-secondary" target="_blank"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>SPREAD PLEASE MENU</h2>
+                <p>Choose your favorite category and satisfy your cravings!</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Category 1: Fries -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/fries.png" alt="Fries Menu" class="category-img">
+                    <h3>Fries & Add-ons</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn" data-name="Plain Fries" data-price="220">
+                            <div class="btn-left-content">
+                                <img src="images/plain-fries.png" class="item-thumb" alt="Plain Fries">
+                                <span>Plain Fries</span>
+                            </div>
+                            <span class="item-price">Rs. 220</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Masala Fries" data-price="250">
+                            <div class="btn-left-content">
+                                <img src="images/masala-fries.png" class="item-thumb" alt="Masala Fries">
+                                <span>Masala Fries</span>
+                            </div>
+                            <span class="item-price">Rs. 250</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Garlic Mayo Fries" data-price="299">
+                            <div class="btn-left-content">
+                                <img src="images/garlic-mayo-fries.png" class="item-thumb" alt="Garlic Mayo Fries">
+                                <span>Garlic Mayo Fries</span>
+                            </div>
+                            <span class="item-price">Rs. 299</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Loaded Fries" data-prices='{"Half": 450, "Full": 650}'>
+                            <div class="btn-left-content">
+                                <img src="images/loaded-fries.png" class="item-thumb" alt="Loaded Fries">
+                                <span>Loaded Fries</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 2: Starters (UPDATED WITH PCS OPTIONS) -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/starters.png" alt="Starters Menu" class="category-img">
+                    <h3>Starters & Wings</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn has-options" data-name="Hot Wings" data-prices='{"5 Pcs": 350, "10 Pcs": 599}'>
+                            <div class="btn-left-content">
+                                <img src="images/hot-wings.png" class="item-thumb" alt="Hot Wings">
+                                <span>Hot Wings</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Oven Baked Wings" data-prices='{"5 Pcs": 350, "10 Pcs": 599}'>
+                            <div class="btn-left-content">
+                                <img src="images/oven-baked-wings.png" class="item-thumb" alt="Oven Baked Wings">
+                                <span>Oven Baked Wings</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Nuggets" data-prices='{"5 Pcs": 299, "10 Pcs": 550}'>
+                            <div class="btn-left-content">
+                                <img src="images/nuggets.png" class="item-thumb" alt="Nuggets">
+                                <span>Nuggets</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Injected Nuggets" data-prices='{"5 Pcs": 399, "10 Pcs": 699}'>
+                            <div class="btn-left-content">
+                                <img src="images/injected-nuggets.png" class="item-thumb" alt="Injected Nuggets">
+                                <span>Injected Nuggets</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Peri Bites" data-prices='{"6 Pcs": 599, "12 Pcs": 1199}'>
+                            <div class="btn-left-content">
+                                <img src="images/peri-bites.png" class="item-thumb" alt="Peri Bites">
+                                <span>Peri Bites</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 3: Wraps & Shawarma -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/wraps.png" alt="Wraps and Shawarma" class="category-img">
+                    <h3>Wraps & Shawarma</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn" data-name="Chicken Cheese Wrap" data-price="499">
+                            <div class="btn-left-content">
+                                <img src="images/chicken-cheese.png" class="item-thumb" alt="Chicken Cheese Wrap">
+                                <span>Chicken Cheese Wrap</span>
+                            </div>
+                            <span class="item-price">Rs. 499</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Zinger Wrap" data-price="550">
+                            <div class="btn-left-content">
+                                <img src="images/zinger.png" class="item-thumb" alt="Zinger Wrap">
+                                <span>Zinger Wrap</span>
+                            </div>
+                            <span class="item-price">Rs. 550</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Bazuka Wrap" data-price="599">
+                            <div class="btn-left-content">
+                                <img src="images/bazuka.png" class="item-thumb" alt="Bazuka Wrap">
+                                <span>Bazuka Wrap</span>
+                            </div>
+                            <span class="item-price">Rs. 599</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Chicken Shawarma" data-price="280">
+                            <div class="btn-left-content">
+                                <img src="images/chicken.png" class="item-thumb" alt="Chicken Shawarma">
+                                <span>Chicken Shawarma</span>
+                            </div>
+                            <span class="item-price">Rs. 280</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Cheese Shawarma" data-price="320">
+                            <div class="btn-left-content">
+                                <img src="images/cheese.png" class="item-thumb" alt="Cheese Shawarma">
+                                <span>Cheese Shawarma</span>
+                            </div>
+                            <span class="item-price">Rs. 320</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Zinger Shawarma" data-price="350">
+                            <div class="btn-left-content">
+                                <img src="images/zinger.png" class="item-thumb" alt="Zinger Shawarma">
+                                <span>Zinger Shawarma</span>
+                            </div>
+                            <span class="item-price">Rs. 350</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 4: Beef Burgers -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/beef-burgers.png" alt="Beef Burgers" class="category-img">
+                    <h3>Premium Beef Burgers</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn has-options" data-name="Spread Classic" data-prices='{"Single": 599, "Double": 849}'>
+                            <div class="btn-left-content">
+                                <img src="images/spread-classic.png" class="item-thumb" alt="Spread Classic">
+                                <span>Spread Classic</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Swiss Mushroom" data-prices='{"Single": 599, "Double": 849}'>
+                            <div class="btn-left-content">
+                                <img src="images/swiss-mushroom.png" class="item-thumb" alt="Swiss Mushroom">
+                                <span>Swiss Mushroom</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Hot Mess" data-prices='{"Single": 599, "Double": 849}'>
+                            <div class="btn-left-content">
+                                <img src="images/hot-mess.png" class="item-thumb" alt="Hot Mess">
+                                <span>Hot Mess</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Onion Boss" data-prices='{"Single": 599, "Double": 849}'>
+                            <div class="btn-left-content">
+                                <img src="images/onion-boss.png" class="item-thumb" alt="Onion Boss">
+                                <span>Onion Boss</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 5: Chicken Burgers -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/chicken-burgers.png" alt="Chicken Burgers" class="category-img">
+                    <h3>Premium Chicken Burgers</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn" data-name="Zinger Burger" data-price="350">
+                            <div class="btn-left-content">
+                                <img src="images/zinger-burger.png" class="item-thumb" alt="Zinger Burger">
+                                <span>Zinger Burger</span>
+                            </div>
+                            <span class="item-price">Rs. 350</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Mighty Zinger" data-price="599">
+                            <div class="btn-left-content">
+                                <img src="images/mighty-zinger.png" class="item-thumb" alt="Mighty Zinger">
+                                <span>Mighty Zinger</span>
+                            </div>
+                            <span class="item-price">Rs. 599</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="CH Grill Burger" data-prices='{"Single": 399, "Double": 650}'>
+                            <div class="btn-left-content">
+                                <img src="images/ch-grill-burger.png" class="item-thumb" alt="CH Grill Burger">
+                                <span>CH Grill Burger</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Patty Burger" data-price="299">
+                            <div class="btn-left-content">
+                                <img src="images/patty-burger.png" class="item-thumb" alt="Patty Burger">
+                                <span>Patty Burger</span>
+                            </div>
+                            <span class="item-price">Rs. 299</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 6: Broast -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/broast.png" alt="Fried Chicken Broast" class="category-img">
+                    <h3>Injected Broast</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn" data-name="Meal 1 (2 Pcs)" data-price="650">
+                            <div class="btn-left-content">
+                                <img src="images/meal-1.png" class="item-thumb" alt="Meal 1">
+                                <span>Meal 1 (2 Pcs)</span>
+                            </div>
+                            <span class="item-price">Rs. 650</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Meal 2 (4 Pcs)" data-price="1150">
+                            <div class="btn-left-content">
+                                <img src="images/meal-2.png" class="item-thumb" alt="Meal 2">
+                                <span>Meal 2 (4 Pcs)</span>
+                            </div>
+                            <span class="item-price">Rs. 1150</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Meal 3 (6 Pcs)" data-price="1499">
+                            <div class="btn-left-content">
+                                <img src="images/meal-3.png" class="item-thumb" alt="Meal 3">
+                                <span>Meal 3 (6 Pcs)</span>
+                            </div>
+                            <span class="item-price">Rs. 1499</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Meal 4 (8 Pcs)" data-price="2050">
+                            <div class="btn-left-content">
+                                <img src="images/meal-4.png" class="item-thumb" alt="Meal 4">
+                                <span>Meal 4 (8 Pcs)</span>
+                            </div>
+                            <span class="item-price">Rs. 2050</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 7: Pizza -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/pizza.png" alt="Pizza Menu" class="category-img">
+                    <h3>Regular & Special Pizza</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn has-options" data-name="Mali Boti Pizza" data-prices='{"Small": 599, "Medium": 999, "Large": 1499}'>
+                            <div class="btn-left-content">
+                                <img src="images/mali-boti.png" class="item-thumb" alt="Mali Boti">
+                                <span>Mali Boti</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Chicken Tikka Pizza" data-prices='{"Small": 599, "Medium": 999, "Large": 1499}'>
+                            <div class="btn-left-content">
+                                <img src="images/chicken-tikka.png" class="item-thumb" alt="Chicken Tikka">
+                                <span>Chicken Tikka</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Chicken Fajita Pizza" data-prices='{"Small": 599, "Medium": 999, "Large": 1499}'>
+                            <div class="btn-left-content">
+                                <img src="images/chicken-fajita.png" class="item-thumb" alt="Chicken Fajita">
+                                <span>Chicken Fajita</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Chicken Supreme Pizza" data-prices='{"Small": 599, "Medium": 999, "Large": 1499}'>
+                            <div class="btn-left-content">
+                                <img src="images/chicken-supreme.png" class="item-thumb" alt="Chicken Supreme">
+                                <span>Chicken Supreme</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Stuffed Crust Pizza" data-prices='{"Medium": 1250, "Large": 1750}'>
+                            <div class="btn-left-content">
+                                <img src="images/stuffed-crust.png" class="item-thumb" alt="Stuffed Crust">
+                                <span>Stuffed Crust</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                        <button class="add-to-cart-btn has-options" data-name="Crown Crust Pizza" data-prices='{"Medium": 1250, "Large": 1750}'>
+                            <div class="btn-left-content">
+                                <img src="images/crown-crust.png" class="item-thumb" alt="Crown Crust">
+                                <span>Crown Crust</span>
+                            </div>
+                            <span class="item-price">Select</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 8: Winter Special -->
+                <div class="menu-card" data-aos="fade-up">
+                    <img src="images/fish.png" alt="Winter Special Fish" class="category-img">
+                    <h3>Winter Special</h3>
+                    <div class="card-buttons">
+                        <button class="add-to-cart-btn" data-name="Injected Fish Burger" data-price="849">
+                            <div class="btn-left-content">
+                                <img src="images/injected-fish-burger.png" class="item-thumb" alt="Fish Burger">
+                                <span>Injected Fish Burger</span>
+                            </div>
+                            <span class="item-price">Rs. 849</span>
+                        </button>
+                        <button class="add-to-cart-btn" data-name="Injected Boneless Fish" data-price="1699">
+                            <div class="btn-left-content">
+                                <img src="images/injected-boneless-fish.png" class="item-thumb" alt="Boneless Fish">
+                                <span>Injected Boneless Fish</span>
+                            </div>
+                            <span class="item-price">Rs. 1699</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Winter Promo Section -->
+    <section class="promo-section">
+        <div class="container promo-container">
+            <div class="promo-image" data-aos="fade-right">
+                <img src="images/fish.png" alt="Winter Special Fish">
+            </div>
+            <div class="promo-text" data-aos="fade-left">
+                <span class="badge">SEASONAL SPECIAL</span>
+                <h2>WINTER IS HERE!</h2>
+                <p>Try our new <strong>Injected Fish Burger</strong> and <strong>Injected Boneless Fish</strong>. Creamy, crispy, and perfectly balanced for pure comfort.</p>
+                <a href="https://wa.me/923464530052?text=Hello%20Sir,%20I%20have%20a%20order" class="btn btn-primary" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Order Fish Special
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Visit Us Today!</h2>
+                    <p>Craving something delicious? Visit our outlet or call us for FREE home delivery.</p>
+                    
+                    <div class="info-box">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h4>Our Location</h4>
+                            <p>Near Sara Cash & Carry, Circular Road, Narowal</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>Call Us</h4>
+                            <p>0346-4530052</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Spread+Please+Circular+Road+Narowal" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fa-brands fa-google"></i> Read Reviews on Google
+                    </a>
+                </div>
+
+                <div class="map-container" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps?q=Spread+Please+Circular+Road+Narowal&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h2>SPREAD PLEASE</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Circular Road Narowal</p>
+                <p><i class="fa-solid fa-phone"></i> 0346-4530052</p>
+                <p class="delivery-tag"><i class="fa-solid fa-motorcycle"></i> DELIVERY FREE</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spread Please. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Zoom Modal (Lightbox) -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <!-- Options Selection Modal (Generalized for Pizza, Burgers, Pcs) -->
+    <div id="options-modal">
+        <div class="options-popup">
+            <span class="close-options-modal" id="close-options">&times;</span>
+            <h3 id="options-title">Select Option</h3>
+            <div id="options-list">
+                <!-- Options will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal (Popup) -->
+    <div id="cart-modal" class="modal" style="display: none; align-items: flex-start; padding-top: 10vh;">
+        <div class="cart-content" style="background: #fff; width: 90%; max-width: 400px; border-radius: 15px; padding: 20px; animation: zoomIn 0.3s ease;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
+                <h3 style="color: var(--text-dark); font-size: 22px;">Your Cart</h3>
+                <span id="close-cart" style="font-size: 28px; cursor: pointer; color: var(--primary-red);">&times;</span>
+            </div>
+            
+            <div id="cart-items" style="max-height: 40vh; overflow-y: auto; margin-bottom: 15px;">
+                <p style="text-align: center; color: #888;">Aapka cart khali hai.</p>
+            </div>
+
+            <div style="border-top: 2px solid #eee; padding-top: 15px; margin-bottom: 20px; display: flex; justify-content: space-between; font-weight: bold; font-size: 18px;">
+                <span>Total:</span>
+                <span id="cart-total">Rs. 0</span>
+            </div>
+
+            <button id="checkout-btn" class="btn btn-secondary" style="width: 100%; text-align: center; border: none;">
+                <i class="fa-brands fa-whatsapp"></i> Checkout via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="#" id="floating-cart-btn" class="floating-cart" title="View Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+    </a>
+
+    <a href="https://wa.me/923464530052?text=Hello%20Sir,%20I%20have%20a%20order" class="floating-whatsapp" target="_blank" title="Order on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <audio id="bg-music" loop>
+        <source src="bg-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="music-btn" title="Play Music">
+        <i class="fa-solid fa-music"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: false });
+
+        // 1. Mobile Menu
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        if(menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+
+        // 2. Image Zoom Modal (Lightbox) - Only on Category Images
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const categoryImages = document.querySelectorAll(".category-img");
+
+        if(modal && modalImg && closeBtn) {
+            categoryImages.forEach(img => {
+                img.addEventListener("click", function() {
+                    modal.style.display = "flex"; 
+                    modalImg.src = this.src;      
+                });
+            });
+            closeBtn.addEventListener("click", function() { modal.style.display = "none"; });
+            modal.addEventListener("click", function(e) { if (e.target === modal) modal.style.display = "none"; });
+        }
+
+        // 3. Back to Top
+        const backToTopBtn = document.getElementById("backToTop");
+        if(backToTopBtn) {
+            window.onscroll = function() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    backToTopBtn.style.display = "flex";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            };
+            backToTopBtn.addEventListener("click", function() { window.scrollTo({top: 0, behavior: 'smooth'}); });
+        }
+
+        // 4. Cart System Logic
+        let cart = JSON.parse(localStorage.getItem('spreadPleaseCart')) || [];
+        const cartIconBtn = document.getElementById('floating-cart-btn'); 
+        const cartModal = document.getElementById('cart-modal');
+        const closeCart = document.getElementById('close-cart');
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotalEl = document.getElementById('cart-total');
+        const cartCountEl = document.getElementById('cart-count');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        if(cartIconBtn) {
+            cartIconBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if(cartModal) cartModal.style.display = 'flex';
+                renderCart();
+            });
+        }
+        if(closeCart) { closeCart.addEventListener('click', () => { if(cartModal) cartModal.style.display = 'none'; }); }
+        if(cartModal) { window.addEventListener('click', (e) => { if (e.target === cartModal) cartModal.style.display = 'none'; }); }
+
+        function saveCart() { localStorage.setItem('spreadPleaseCart', JSON.stringify(cart)); }
+        function updateCartCount() {
+            if(!cartCountEl) return;
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCountEl.innerText = totalItems;
+        }
+
+        function addToCartLogic(name, price) {
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) { existingItem.quantity += 1; } else { cart.push({ name: name, price: price, quantity: 1 }); }
+            saveCart();
+            updateCartCount();
+        }
+
+        // === FLY TO CART ANIMATION FUNCTION ===
+        function animateFlyToCart(sourceImgSrc, triggerElement) {
+            const cartBtn = document.getElementById('floating-cart-btn');
+            const cartRect = cartBtn.getBoundingClientRect();
+            const btnRect = triggerElement.getBoundingClientRect();
+
+            const flyingImg = document.createElement('img');
+            flyingImg.src = sourceImgSrc;
+            flyingImg.className = 'fly-img';
+            
+            flyingImg.style.left = btnRect.left + 'px';
+            flyingImg.style.top = btnRect.top + 'px';
+            flyingImg.style.width = '40px';
+            flyingImg.style.height = '40px';
+            
+            document.body.appendChild(flyingImg);
+
+            setTimeout(() => {
+                flyingImg.style.left = (cartRect.left + 15) + 'px';
+                flyingImg.style.top = (cartRect.top + 15) + 'px';
+                flyingImg.style.width = '10px';
+                flyingImg.style.height = '10px';
+                flyingImg.style.opacity = '0.2';
+                flyingImg.style.transform = 'rotate(360deg)';
+            }, 20);
+
+            setTimeout(() => {
+                flyingImg.remove();
+            }, 1300); 
+        }
+
+        // Attach event listeners to standard buttons (No options)
+        const standardBtns = document.querySelectorAll('.add-to-cart-btn:not(.has-options)');
+        standardBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                const name = this.getAttribute('data-name');
+                const price = parseInt(this.getAttribute('data-price'));
+                const imgSrc = this.querySelector('.item-thumb').src;
+                
+                animateFlyToCart(imgSrc, this);
+                setTimeout(() => { addToCartLogic(name, price); }, 400);
+
+                const originalText = this.innerHTML;
+                this.innerHTML = '<div style="width:100%; text-align:center;">Added! ✓</div>';
+                this.style.backgroundColor = "var(--primary-orange)";
+                this.style.color = "#fff";
+                setTimeout(() => { 
+                    this.innerHTML = originalText; 
+                    this.style.backgroundColor = "";
+                    this.style.color = "";
+                }, 1000);
+            });
+        });
+
+        // === OPTIONS MODAL LOGIC (Pizza, Burgers, Wings, etc.) ===
+        const optionBtns = document.querySelectorAll('.has-options');
+        const optionsModal = document.getElementById('options-modal');
+        const closeOptions = document.getElementById('close-options');
+        const optionsTitle = document.getElementById('options-title');
+        const optionsList = document.getElementById('options-list');
+        let currentItem = { name: '', imgSrc: '', triggerBtn: null };
+
+        if(optionBtns.length > 0) {
+            optionBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    currentItem.name = this.getAttribute('data-name');
+                    currentItem.imgSrc = this.querySelector('.item-thumb').src;
+                    currentItem.triggerBtn = this;
+                    const prices = JSON.parse(this.getAttribute('data-prices'));
+                    
+                    optionsTitle.innerText = `Select Option for ${currentItem.name}`;
+                    optionsList.innerHTML = '';
+
+                    for (const [size, price] of Object.entries(prices)) {
+                        const sizeBtn = document.createElement('button');
+                        sizeBtn.className = 'option-btn';
+                        sizeBtn.innerHTML = `<span>${size}</span> <span>Rs. ${price}</span>`;
+                        sizeBtn.onclick = () => {
+                            optionsModal.style.display = 'none';
+                            
+                            animateFlyToCart(currentItem.imgSrc, currentItem.triggerBtn);
+
+                            setTimeout(() => { 
+                                addToCartLogic(`${currentItem.name} (${size})`, price); 
+                            }, 400);
+                        };
+                        optionsList.appendChild(sizeBtn);
+                    }
+                    optionsModal.style.display = 'flex';
+                });
+            });
+        }
+        if(closeOptions) { closeOptions.onclick = () => { optionsModal.style.display = 'none'; }; }
+        window.addEventListener('click', (e) => { if (e.target === optionsModal) optionsModal.style.display = 'none'; });
+
+
+        // Render Cart
+        function renderCart() {
+            if(!cartItemsContainer || !cartTotalEl) return;
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p style="text-align: center; color: #888;">Aapka cart khali hai.</p>';
+                cartTotalEl.innerText = 'Rs. 0';
+                return;
+            }
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                const itemDiv = document.createElement('div');
+                itemDiv.style.display = 'flex';
+                itemDiv.style.justifyContent = 'space-between';
+                itemDiv.style.alignItems = 'center';
+                itemDiv.style.marginBottom = '10px';
+                itemDiv.style.borderBottom = '1px solid #f5f5f5';
+                itemDiv.style.paddingBottom = '10px';
+
+                itemDiv.innerHTML = `
+                    <div>
+                        <h4 style="font-size: 15px; color: #333;">${item.name}</h4>
+                        <span style="font-size: 14px; color: var(--primary-orange);">Rs. ${item.price} x ${item.quantity} = Rs. ${itemTotal}</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <button onclick="changeQty(${index}, -1)" style="border:none; background:#eee; padding: 2px 8px; border-radius: 5px; cursor:pointer;">-</button>
+                        <span style="font-size: 14px; font-weight: bold;">${item.quantity}</span>
+                        <button onclick="changeQty(${index}, 1)" style="border:none; background:#eee; padding: 2px 8px; border-radius: 5px; cursor:pointer;">+</button>
+                        <button onclick="removeItem(${index})" style="border:none; background:transparent; color:red; cursor:pointer;"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemDiv);
+            });
+            cartTotalEl.innerText = `Rs. ${total}`;
+        }
+
+        window.changeQty = function(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) cart.splice(index, 1);
+            saveCart(); renderCart(); updateCartCount();
+        }
+        window.removeItem = function(index) {
+            cart.splice(index, 1);
+            saveCart(); renderCart(); updateCartCount();
+        }
+
+        // Checkout (Professional Receipt Format)
+        if(checkoutBtn) {
+            checkoutBtn.addEventListener('click', () => {
+                if (cart.length === 0) { alert("Aapka cart khali hai! Pehle kuch order karein."); return; }
+                
+                let message = "*NEW ORDER - SPREAD PLEASE*%0A";
+                message += "-------------------------%0A";
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    message += `${item.quantity}x ${item.name} = Rs. ${itemTotal}%0A`;
+                });
+                
+                message += "-------------------------%0A";
+                message += `*TOTAL BILL: Rs. ${total}*%0A%0A`;
+                message += "Please confirm my order. Thank you!";
+                
+                window.open(`https://wa.me/923464530052?text=${message}`, '_blank');
+            });
+        }
+
+        updateCartCount();
+
+        // 5. Music Toggle
+        const bgMusic = document.getElementById('bg-music');
+        const musicBtn = document.getElementById('music-toggle');
+        let isPlaying = false;
+        if(bgMusic && musicBtn) {
+            bgMusic.volume = 0.3; 
+            musicBtn.addEventListener('click', () => {
+                if (!isPlaying) {
+                    bgMusic.play();
+                    musicBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'; 
+                    musicBtn.classList.add('playing');
+                    isPlaying = true;
+                } else {
+                    bgMusic.pause();
+                    musicBtn.innerHTML = '<i class="fa-solid fa-music"></i>'; 
+                    musicBtn.classList.remove('playing');
+                    isPlaying = false;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
